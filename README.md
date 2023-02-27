@@ -26,18 +26,18 @@ A subfolder called <mark>Results</mark>  that gathers the csv files with the ans
 
 After cheking for connections the diagram for the project is presented her:
 
-![ERD Challenge # 9](.\EmployeeSQL\Images\QuickDBD_Challenge9sql.png) 
+![ERD Challenge # 9](./EmployeeSQL/Images/QuickDBD_Challenge9sql.png) 
 
 The tables are almost all connected by the employee number, which is a natural key for this type of databases. The only exception are the titles and departament tables that use other ids.
 
 The ERD code is displayed here:
 
-![Quickdatabase diagram ](.\EmployeeSQL\Images\Relations_in_ERD.png) 
+![Quickdatabase diagram ](./EmployeeSQL/Images/Relations_in_ERD.png) 
 
 ## Second part
 The schemata for the Database can be found in the following link:
 
-[Schemata SQL](.\EmployeeSQL\ERD_Schema_final.sql)
+[Schemata SQL](./EmployeeSQL/ERD_Schema_final.sql)
 
 Note: QuickDatabase assigns NOT NULL values to all the fields so I mantained them that way when they were exported to SQL.
 
@@ -48,14 +48,14 @@ If an employee was to be employed in two different departaments we will expect t
 
 The csv files with the results can be found in:
 
-[Answer 1 Csv](.\EmployeeSQL\Results\Question1.csv), 
-[Answer 2 Csv](.\EmployeeSQL\Results\Question2.csv), 
-[Answer 3 Csv](.\EmployeeSQL\Results\Question3.csv), 
-[Answer 4 Csv](.\EmployeeSQL\Results\Question4.csv), 
-[Answer 5 Csv](.\EmployeeSQL\Results\Question5.csv), 
-[Answer 6 Csv](.\EmployeeSQL\Results\Question6.csv), 
-[Answer 7 Csv](.\EmployeeSQL\Results\Question7.csv), 
-[Answer 8 Csv](.\EmployeeSQL\Results\Question8.csv).
+[Answer 1 Csv](./EmployeeSQL/Results/Question1.csv), 
+[Answer 2 Csv](./EmployeeSQL/Results/Question2.csv), 
+[Answer 3 Csv](./EmployeeSQL/Results/Question3.csv), 
+[Answer 4 Csv](./EmployeeSQL/Results/Question4.csv), 
+[Answer 5 Csv](./EmployeeSQL/Results/Question5.csv), 
+[Answer 6 Csv](./EmployeeSQL/Results/Question6.csv), 
+[Answer 7 Csv](./EmployeeSQL/Results/Question7.csv), 
+[Answer 8 Csv](./EmployeeSQL/Results/Question8.csv).
 
 The files used for running the queries is found in this link : 
-[Data Analysis Queries](.\EmployeeSQL\DAta_analysis.sql)
+[Data Analysis Queries](./EmployeeSQL/Data_analysis.sql)
