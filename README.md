@@ -7,16 +7,14 @@
 
 A folder called  <mark>EmployeeSQL</mark>  where you will find the sql files for the queries organized as follows:
 
-- Review_csvfiles.csv   with queries to check the databases are reliable.
+- Review_csvfiles.csv   with queries to check if the databases have duplicates.
 - ERD_Schema_final.csv   with the file that contains the schemata for the Database.
 - Drop_tables.csv  with the query to drop the tables in case they exist.
-- Data_analysis.csv  with the queries that deliver answers to the quetions of the challenge
-
+- Data_analysis.csv  with the queries that deliver answers to the questions of the challenge
 
 A subfolder called <mark>data</mark>  that contains the csv files necesary for the analysis.
-- Note: the folder contains a dept_emp past.csv and a dept_emp.csv files. The second one was used after cleaning the duplicates in the original one.
 
-A subfolder called <mark>Images</mark>  with the images for the creation of the ERD
+A subfolder called <mark>Images</mark>  with the images of the ERD
 
 A subfolder called <mark>Results</mark>  that gathers the csv files with the answers to the questions of the Data Analysis
 
@@ -39,10 +37,8 @@ The schemata for the Database can be found in the following link:
 
 [Schemata SQL](./EmployeeSQL/ERD_Schema_final.sql)
 
-Note: QuickDatabase assigns NOT NULL values to all the fields so I mantained them that way when they were exported to SQL.
-
-For this part of the assigment the database dept_emp.csv was cleaned by removing all the duplcated data. The reasoning for this was that it contained duplicates of the employees id that didn't appear in the full database of employees. 
-If an employee was to be employed in two different departaments we will expect they to appear in both files.   
+Note: QuickDatabase assigns NOT NULL values to all the fields that were mantained when exported to SQL.
+   
 
 ## Third part
 

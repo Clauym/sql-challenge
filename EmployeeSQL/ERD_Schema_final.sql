@@ -1,5 +1,7 @@
 ﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/Hxe3yJ
+-- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+
 -- DB schema diagram RH of the company.
 
 /*DROP TABLE IF EXIST dept_emp CASCADE;
@@ -58,7 +60,7 @@ CREATE TABLE "dept_emp" (
     "emp_no" INT   NOT NULL,
     "dept_no" CHAR(4)   NOT NULL,
     CONSTRAINT "pk_dept_emp" PRIMARY KEY (
-        "emp_no"
+        "emp_no","dept_no"
      )
 );
 
@@ -87,4 +89,3 @@ SELECT * FROM   departaments;
 SELECT * FROM   employees;
 SELECT * FROM   dept_manager;
 SELECT * FROM   dept_emp;
-

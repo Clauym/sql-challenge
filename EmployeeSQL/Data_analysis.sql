@@ -2,14 +2,14 @@
 SELECT  e.emp_no, e.last_name, e.first_name, e.sex, s.salary
 FROM employees as e
 INNER JOIN salaries as s ON
-e.emp_no = s.emp_no
-ORDER BY e.last_name;
+e.emp_no = s.emp_no;
+
 
 --2. List the first name, last name, and hire date for the employees who were hired in 1986.
 SELECT  first_name, last_name, hire_date
 FROM employees 
-WHERE hire_date BETWEEN '1986/01/01' AND '1986/12/31' 
-ORDER BY hire_date, last_name;
+WHERE hire_date BETWEEN '1986/01/01' AND '1986/12/31';
+
 
 /*3. List the manager of each department along with their department number, department name,
 			employee number, last name, and first name.*/
@@ -19,8 +19,8 @@ FROM dept_manager as dm
 INNER JOIN departaments as d ON
 dm.dept_no = d.dept_no
 INNER JOIN employees as e ON
-dm.emp_no = e.emp_no
-ORDER BY dept_name, last_name;
+dm.emp_no = e.emp_no;
+
 
 /*4. List the department number for each employee along with that employee’s employee number,
 			last name, first name, and department name.*/
@@ -30,15 +30,15 @@ FROM dept_emp as de
 INNER JOIN departaments as d ON
 de.dept_no = d.dept_no
 INNER JOIN employees as e ON
-de.emp_no = e.emp_no
-ORDER BY dept_name, last_name;
+de.emp_no = e.emp_no;
+
 
 /* 5. List first name, last name, and sex of each employee whose first name is Hercules and
 			whose last name begins with the letter B.*/
 SELECT first_name, last_name, sex 
 FROM employees
-WHERE first_name='Hercules' AND last_name LIKE 'B%'
-ORDER BY last_name; 
+WHERE first_name='Hercules' AND last_name LIKE 'B%';
+
 
 --6. List each employee in the Sales department, including their employee number, last name, and first name.
 SELECT emp_no, first_name, last_name, sex 
@@ -53,8 +53,8 @@ WHERE emp_no IN
  		FROM departaments
  		WHERE dept_name= 'Sales' --Alternatively Sales departa,ent is d007
 		)
-	)
-ORDER BY last_name, first_name; 
+	);
+
 
 /*7. List each employee in the Sales and Development departments, including their employee number,
 			last name, first name, and department name.*/
@@ -65,8 +65,8 @@ de.emp_no = e.emp_no
 INNER JOIN departaments as d ON
 d.dept_no = de.dept_no
 WHERE dept_name = 'Sales' OR
-	dept_name ='Development'
-ORDER BY d.dept_name;	
+	dept_name ='Development';
+
 
 /*8. List the frequency counts, in descending order, of all the employee last names (that is,
 			how many employees share each last name).*/
